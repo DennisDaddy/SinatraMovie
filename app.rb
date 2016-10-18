@@ -1,5 +1,6 @@
 require 'sinatra'
 
 get ('/movies') do
-	'coming soon'
+
+	erb :index
 end
