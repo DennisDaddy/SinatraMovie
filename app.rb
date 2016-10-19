@@ -2,9 +2,13 @@ require 'sinatra'
 require 'movie'
 
 get ('/movies') do
-	@movie = Movie.new
-
-	@movie.title = "Jaws"
+	@movies = []
+	@movies[0] =Movie.new
+	@movies[0].title = "Jaws"
+	@movies[1] =Movie.new
+	@movies[1].title = "Ali"
+	@movies[2] =Movie.new
+	@movies[2].title = "Terminator"
 
 	erb :index
 end
