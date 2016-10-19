@@ -12,3 +12,9 @@ get ('/movies') do
 
 	erb :index
 end
+
+
+get('/movies/new') do
+	erb :new
+
+end
